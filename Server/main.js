@@ -8,7 +8,7 @@ const productsRouter = require('./routers/productsRouter');
 const app = express();
 const port = 8000;
 
-connectDB();
+connectDB;
 
 app.use(cors());
 app.use(express.json());

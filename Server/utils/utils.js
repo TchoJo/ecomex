@@ -20,4 +20,4 @@ const deleteItem = (urLink, id) => {
     return axios.delete(`${urLink}/${id}`);
 };
 
-export default { getItems, getItem, updateItem, postItem, deleteItem };
+module.exports = { getItems, getItem, updateItem, postItem, deleteItem };

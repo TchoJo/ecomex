@@ -1,7 +1,8 @@
-import utils from "../utils/utils";
+const utils = require('../utils/utils');
+
 
 const getUsers = async () => {
-    let resp = utils.getItems("https://jsonplaceholder.typicode.com/users");
+    let resp = await utils.getItems("https://jsonplaceholder.typicode.com/users");
     return resp.data;
 };
 
